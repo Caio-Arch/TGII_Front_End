@@ -7,7 +7,7 @@ import Feedback from '../imgs/feedback.png';
 
 function Cart() {
   const [quantidade, setQuantidade] = useState(1);
-  const precoIngresso = 200;
+  const precoIngresso = 800;
   const total = quantidade * precoIngresso;
 
   const handleIncrement = () => {
