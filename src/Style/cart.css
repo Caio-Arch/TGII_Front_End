@@ -1,0 +1,259 @@
+/* Cart.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  font-weight: 600;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #111;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Ajuste para mover o nav para a direita */
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+nav .logo {
+  font-size: 2rem;
+  background: linear-gradient(
+    120deg,
+    hsl(318, 94%, 61%),
+    hsl(239, 69%, 51%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  margin-right: 490px;
+}
+
+ul {
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 35px;
+  font-size: 1.2rem;
+}
+
+nav a {
+  background: linear-gradient(
+    120deg,
+    hsl(318, 94%, 61%),
+    hsl(239, 69%, 51%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid hs1(239, 69%, 51%);
+  transition: 1s;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between; /* Ajuste para espaçar cart-left e cart-right */
+  align-items: center;
+  gap: 0px 100px;
+}
+
+.cart-left {
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: left;
+  background: linear-gradient(
+    120deg,
+    hsl(312, 13%, 92%),
+    hsl(0, 0%, 31%),
+    white /* Adicione a cor branca ao degradê */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.custom-hr {
+  border: none;
+  border-top: 2px solid #ffffff; /* Cor e estilo da linha */
+  margin: 10px 0; /* Espaçamento superior e inferior */
+  width: 100%; /* Largura total */
+}
+
+.custom-hr2 {
+  border: none;
+  border-top: 2px solid #ffffff; /* Cor e estilo da linha */
+  margin: 11px 0; /* Espaçamento superior e inferior */
+  width: 100%; /* Largura total */
+  margin-left: 5px;
+}
+
+.ingresso{
+  padding: 30px;
+  transform: scale(1.5);
+}
+
+/* ... Seu código CSS anterior ... */
+
+.item-description {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ingresso {
+  padding: 30px;
+  transform: scale(1.5);
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.text-description {
+  display: flex;
+  flex-direction: space-around;
+  gap: 5px; /* Espaço entre os elementos de texto */
+}
+
+.text1{
+  display: flex;
+  margin-top: 15px;
+  padding-right: 25px;
+  margin-left: -40px;
+  width: 190px;
+}
+
+.text2{
+  display: flex;
+  margin-top: 25px;
+  margin-left: -45px;
+  padding-right: 35px;
+}
+
+.text3{
+  display: flex;
+  margin-top: 25px;
+  margin-left: -45px;
+  padding-right: 1px;
+  width: 300px;
+}
+
+.text4 {
+  display: flex;
+  align-items: center; /* Alinha os elementos verticalmente ao centro */
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.text4 div {
+  margin: 5px; /* Adiciona margem entre os elementos */
+}
+
+.quantity-container {
+  display: flex;
+  gap: 5px;
+  padding-left: 77px; /* Espaçamento entre os elementos dentro desta div */
+}
+
+.buttons{
+  font-weight:bold;
+  padding: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(
+    120deg,
+    hsl(312, 13%, 92%),
+    hsl(0, 0%, 31%),
+    white /* Adicione a cor branca ao degradê */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  
+} 
+
+.lixo{
+  transform: scale(0.5);
+}
+
+.teste{
+  display: flex;
+  margin-left: 730px;
+  margin-bottom: -50px;
+}
+
+.presente {
+  transform: scale(0.7);
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  margin-right: 10px; /* Adicione margem à direita para espaçamento */
+}
+
+.feedback {
+  transform: scale(0.7);
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  margin-right: 10px; /* Adicione margem à direita para espaçamento */
+}
+
+.item-description2 {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os elementos dentro de .item-description */
+  margin-top: 20px;
+}
+
+.text-description2 {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  gap: 5px;
+}
+
+.cart-right {
+  flex: 1;
+  margin-top: -138px;
+  margin-right: -10px;
+  text-align: right;
+  background: linear-gradient(
+    120deg,
+    hsl(312, 13%, 92%),
+    hsl(0, 0%, 31%),
+    white /* Adicione a cor branca ao degradê */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  display: flex; /* Use flexbox to control alignment */
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: space-between; /* Space elements evenly */
+  font-size: 18px;
+}
+
+/* Style individual elements as needed */
+.cart-right h3 {
+  text-align: left;
+  margin-left:20px; /* Align the heading to the left */
+}
+
+.leftText {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 20px; /* Center items vertically */  
+  margin-right: 100px;
+}
+
+.rightText {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  margin-top: -40px;
+}
