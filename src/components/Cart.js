@@ -9,6 +9,7 @@ function Cart() {
   const [quantidade, setQuantidade] = useState(1);
   const precoIngresso = 800;
   const total = quantidade * precoIngresso;
+  const frete = 20;
 
   const handleIncrement = () => {
     setQuantidade(quantidade + 1);
@@ -57,7 +58,7 @@ function Cart() {
           </div>
           <div className='text4'>
             <p>Valor do ingresso: </p>
-            <p>R$200</p>
+            <p>R$800</p>
           <div className="quantity-container">  
             <button className='buttons' onClick={handleDecrement}>-</button>
             <span>{quantidade}</span>
@@ -78,10 +79,10 @@ function Cart() {
           <h3>Resumo do Pedido</h3>
           <hr className="custom-hr2" />
           <p className='leftText'>Subtotal:</p> <p className='rightText'> R${total}</p>
-          <p className='leftText'>Envio:</p> <p className='rightText'>Grátis</p>
+          <p className='leftText'>Envio:</p> <p className='rightText'>R$20</p>
           <p className='leftText'>Local para Envio:</p><p className='rightText'>Padrão</p>
           <hr className="custom-hr2" />
-          <p className='leftText'>Total</p><p className='rightText'>R${total}</p>
+          <p className='leftText'>Total</p><p className='rightText'>R${total + frete}</p>
           <p></p>
         </div>
       </div>
